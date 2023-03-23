@@ -1,0 +1,56 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+}
+.header {
+    display: grid;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns:  4fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 15px;
+}
+
+.header {
+    grid-column: 1/-1;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.projects div {
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: rgb(209, 171, 0);
+    
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.4em;
+    color: white;
+}
+
+.announcements {
+    border: black solid 1px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.announcements p {
+    font-size: .8em;
+    overflow: ellipsis;
+}
+
+

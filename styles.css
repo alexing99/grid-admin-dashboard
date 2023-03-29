@@ -17,7 +17,9 @@ body {
 .buttons {
     grid-column: 2 / 2;
     align-self: center;
-
+    justify-self: center;
+    overflow: hidden ;
+    white-space: nowrap;
 }
 
 .header button {
@@ -38,9 +40,36 @@ body {
 
 .header .search-bar {
     margin: 10px 20px 10px 20px;
+    padding-top: 8px;
 }
 
+.header .profile {
+    padding-right: 55px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 5px;
+}
 
+.header .profile .bell {
+    justify-self: end;
+    position: relative;
+    top: 15px;
+}
+
+.header .profile .profile-icon {
+    justify-self: center;
+    position: relative;
+    top: 8px;
+    height: 35px;
+}
+
+.header .profile p {
+    align-self: center;
+    font-weight: 700;
+    position: relative;
+    top: 4px;
+}
 
 .header img {
     height: 20px;
@@ -48,6 +77,36 @@ body {
     top: 6px;
 }
 
+.header .greeting {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    margin-top: -30px;
+    margin-left: -10px;
+    
+    
+}
+
+.header .big-profile-icon {
+    height: 60px;
+    grid-row: 1 / 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.header .small-hello {
+    grid-column: 2 / 2;
+    align-self: end;
+    font-size: .7em;
+    font-weight: 600;
+}
+
+.header .big-name {
+    grid-column: 2 / 2;
+    font-size: 1.4em;
+    font-weight: 600;
+}
 
 
 .main-content {
@@ -80,7 +139,7 @@ body {
 .projects div {
     border: none;
     border-left: #06b6d4 solid 7px;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 10px;
     background-color: white ;
     overflow: hidden;
@@ -145,7 +204,7 @@ h4 {
     /* height: 360px; */
     border: none;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 2px 2px 2px rgba(199, 198, 198, 0.741);
 }
 
@@ -168,7 +227,7 @@ h4 {
     height: 200px;
     border: none;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: gray;
     font-size: .4em;
     box-shadow: 2px 2px 2px rgba(199, 198, 198, 0.741);

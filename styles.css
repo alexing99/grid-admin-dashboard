@@ -98,7 +98,7 @@ body {
 .header .small-hello {
     grid-column: 2 / 2;
     align-self: end;
-    font-size: .7em;
+    font-size: .8em;
     font-weight: 600;
 }
 
@@ -118,8 +118,20 @@ body {
 .main-content .body-content {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    grid-template-rows: 30px 1fr;
     gap: 10px;
 }
+
+.body-content h3 {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.body-content .your-projects {
+    margin-left: 15px;
+}
+
+
 
 .header {
     grid-column: 1/-1;
@@ -144,7 +156,7 @@ body {
     background-color: white ;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: .7em;
+    font-size: 1em;
     display: grid;
     box-shadow: 2px 2px 2px rgba(199, 198, 198, 0.741);
 
@@ -231,13 +243,43 @@ h4 {
     color: gray;
     font-size: .4em;
     box-shadow: 2px 2px 2px rgba(199, 198, 198, 0.741);
+    display: grid;
+    
+}
+
+.rightside .trending-header {
+    height: 30px;
+    align-self: end;
+    margin-bottom: -10px;
+}
+
+.trending img {
+    height: 30px;
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.trending p {
+    margin-left: 10px;
+    position: relative;
+    
+}
+
+.trending p:first-of-type {
+    font-weight: 500;
+    color: black;
+}
+
+.trending div {
+    display: inline-block;
 }
 
 .rightside {
     min-width: 200px;
     display: grid;
     gap: 10px;
-    grid-template-rows: repeat( 2, 1fr);
+    
     margin-right: 15px;
 }
 

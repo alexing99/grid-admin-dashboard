@@ -84,8 +84,6 @@ body {
     column-gap: 10px;
     margin-top: -30px;
     margin-left: -10px;
-    
-    
 }
 
 .header .big-profile-icon {
@@ -113,11 +111,12 @@ body {
     display: grid;
     grid-template-rows: 1fr 5fr;
     gap: 15px;
+    height: 100vh;
 }
 
 .main-content .body-content {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1.3fr;
     grid-template-rows: 30px 1fr;
     gap: 10px;
 }
@@ -125,13 +124,12 @@ body {
 .body-content h3 {
     font-weight: 600;
     font-size: 1em;
+    align-self: end;
 }
 
 .body-content .your-projects {
     margin-left: 15px;
 }
-
-
 
 .header {
     grid-column: 1/-1;
@@ -158,13 +156,14 @@ body {
     text-overflow: ellipsis;
     font-size: 1em;
     display: grid;
+    grid-template-rows: 20px 120px 50px;
     box-shadow: 2px 2px 2px rgba(199, 198, 198, 0.741);
-
 }
 
 .projects p {
     color: rgba(128, 128, 128, 0.886);
 }
+
 div .project-icons {
     border: none;
     display: inline-block; 
@@ -183,13 +182,13 @@ p {
     background-color: #c2410c;
     min-width: 220px;
     font-size: .8em;
+    padding-left: 20px
 }
 
 .sidebar h2 {
     color: white;
     text-align: start;
-    margin-left: 10px;
-    
+    margin-left: 10px; 
 }
 
 .projects img {
@@ -200,20 +199,18 @@ p {
     margin-bottom: -15px;
 }
 
-
-
 li {
     list-style-type: none;
     font-size: 1.4em;
     color: white;
 }
+
 h4 {
     font-size: .7em;
     margin: 0px;
     padding: 0px;
 }
 .announcements {
-    /* height: 360px; */
     border: none;
     padding: 10px;
     border-radius: 8px;
@@ -236,21 +233,21 @@ h4 {
 }
 
 .trending {
-    height: 200px;
+    height: 160px;
     border: none;
-    padding: 5px;
+    padding: 15px;
     border-radius: 8px;
     color: gray;
     font-size: .4em;
     box-shadow: 2px 2px 2px rgba(199, 198, 198, 0.741);
     display: grid;
-    
 }
 
 .rightside .trending-header {
     height: 30px;
     align-self: end;
-    margin-bottom: -10px;
+    
+    margin-top: -30px;
 }
 
 .trending img {
@@ -263,7 +260,6 @@ h4 {
 .trending p {
     margin-left: 10px;
     position: relative;
-    
 }
 
 .trending p:first-of-type {
@@ -277,10 +273,11 @@ h4 {
 
 .rightside {
     min-width: 200px;
+    max-height: fit-content;
     display: grid;
-    gap: 10px;
-    
+    gap: 5px; 
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .rightside div {
@@ -300,19 +297,15 @@ h4 {
     margin-left: -20px;
     display: grid;
     gap: 10px
-    
 }
 
 .navigation img {
-
     height: 20px;
     margin: 0px;
     margin-right: 20px;
     position: relative;
     top: 3px;
 }
-
-
 
 .branding img {
     height: 20px;
@@ -330,10 +323,8 @@ h4 {
 }
 
 h3 {
-    /* margin-bottom: -20px; */
     padding: 0px;
     margin: 0px;
-    
 }
 
 
